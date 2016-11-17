@@ -182,6 +182,63 @@ body {
   height: 100%;
   width: 800px;
 }
+.frame .show-pic .show-inner .show-middle .middle-container {
+  width: 780px;
+  height: 100%;
+  margin: auto;
+  border: 1px solid #00ff00;
+}
+.frame .show-pic .show-inner .show-middle .middle-container .carousel {
+  width: 100%;
+  height: 340px;
+  background-color: #7b007b;
+  position: relative;
+}
+.frame .show-pic .show-inner .show-middle .middle-container .carousel img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+}
+.frame .show-pic .show-inner .show-middle .middle-container .carousel .carousel-button {
+  height: 60px;
+  width: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 300;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  cursor: pointer;
+}
+.frame .show-pic .show-inner .show-middle .middle-container .carousel .carousel-button:hover {
+  background-color: #666;
+}
+.frame .show-pic .show-inner .show-middle .middle-container .carousel .button-left {
+  left: 0;
+}
+.frame .show-pic .show-inner .show-middle .middle-container .carousel .button-right {
+  right: 0;
+}
+.frame .show-pic .show-inner .show-middle .middle-container .carousel .position-show-line {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  height: 20px;
+  width: auto;
+  padding-top: 4px;
+  border-radius: 10px ;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+}
+.frame .show-pic .show-inner .show-middle .middle-container .carousel .position-show-line .item-circle {
+  height: 12px;
+  width: 12px;
+  border-radius: 6px;
+  background-color: #fff;
+  float: left;
+  margin: auto 5px;
+  cursor: pointer;
+}
 .frame .show-pic .show-inner .show-right {
   height: 100%;
   width: 193px;

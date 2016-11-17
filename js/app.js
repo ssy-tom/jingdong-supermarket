@@ -10,7 +10,6 @@ var FloorLine = require("./floorLine");
 var Nav = require("./nav");
 var ShowPic = require("./showPic");
 //var data=require("./resource/getDataStream");
-
 var Frame = React.createClass({
     getInitialState: function () {
         return {

@@ -6,6 +6,7 @@ var React = require("react");
 var $ = require("jquery");
 var ShowPicContent = require("./showPicContent");
 var ShowPicTab = require("./showPicTab");
+var Carousel=require("./carousel");
 var showPic = React.createClass({
     getInitialState: function () {
         return {
@@ -25,25 +26,20 @@ var showPic = React.createClass({
                 <ShowPicTab></ShowPicTab>
                 <ShowPicContent data={this.state.tabData}></ShowPicContent>
             </div>
-            <div className="show-middle"></div>
-            <div className="show-right"></div>
+            <div className="show-middle">
+                <div className="middle-container">
+                    <Carousel></Carousel>
+
+                </div>
+            </div>
+            <div className="show-right">
+
+            </div>
         </div>
     },
-    //show:function(){
-    //    //alert("success");
-    //    this.setState({
-    //        isShow:true
-    //    })
-    //},
-    //hide:function(e){
-    //
-    //    //alert("leave");
-    //    this.setState({
-    //        isShow:false
-    //    })
-    //},
+
     componentDidMount: function () {
-    },
-})
+    }
+});
 
 module.exports = showPic;
